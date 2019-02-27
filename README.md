@@ -1,2 +1,1 @@
-# suckless
-Suckless rice
+# Suckless rice
