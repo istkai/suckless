@@ -22,8 +22,8 @@ static const char col_gray4[]       =  "#eeeeee";
 static const char col_cyan[]        =  "#8BE9FD";
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
-	[SchemeNorm] = { col_fg, col_bg, col_magenta },
-	[SchemeSel]  = { col_bg, col_purple,  col_purple  },
+	[SchemeNorm] = { col_fg, col_bg, col_purple },
+	[SchemeSel]  = { col_bg, col_purple,  col_magenta  },
 };
 static const unsigned int baralpha = 0xd0;
 static const unsigned int borderalpha = OPAQUE;
