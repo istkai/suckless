@@ -88,7 +88,7 @@ static const char *yout[]       = { "gtk-youtube-viewer", NULL };
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
-	{ MODKEY,                       XK_i,      spawn,          {.v = yout } },
+	{ MODKEY,                       XK_y,      spawn,          {.v = yout } },
 	{ MODKEY,                       XK_i,      spawn,          {.v = monitor } },
 	{ MODKEY,                       XK_s,      spawn,          SHCMD("exec $HOME/.scrot.sh") },
 	{ MODKEY,                       XK_r,      spawn,          {.v = file } },
