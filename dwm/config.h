@@ -6,7 +6,7 @@ static const unsigned int snap      =  8;        /* snap pixel */
 static const unsigned int gappx     =  6;
 static const int showbar            =  1;        /* 0 means no bar */
 static const int topbar             =  1;        /* 0 means bottom bar */
-static const char *fonts[]          = {"SF Pro Display:size=8" };
+static const char *fonts[]          = {"SF Pro Text:size=8" };
 static const char dmenufont[]       =  "SF Mono:size=8";
 static const char col_gray1[]       =  "#222222";
 static const char col_gray2[]       =  "#444444";
