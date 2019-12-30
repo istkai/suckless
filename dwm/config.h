@@ -87,10 +87,12 @@ static const char *monitor[]    = { "st", "htop", NULL };
 static const char *music[]      = { "spotify", NULL };
 static const char *yout[]       = { "gtk-youtube-viewer", NULL };
 static const char *style[]      = { "lxappearance", NULL };
+static const char *colour[]     = { "gpick", NULL };
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
 	{ MODKEY,                       XK_y,      spawn,          {.v = yout } },
+	{ MODKEY,                       XK_c,      spawn,          {.v = colour } },
 	{ MODKEY,                       XK_l,      spawn,          {.v = style } },
 	{ MODKEY,                       XK_i,      spawn,          {.v = monitor } },
 	{ MODKEY,                       XK_s,      spawn,          SHCMD("exec $HOME/.scrot.sh") },

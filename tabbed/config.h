@@ -1,7 +1,8 @@
 /* See LICENSE file for copyright and license details. */
 
 /* appearance */
-static const char font[]        = "-*-*-medium-*-*-*-14-*-*-*-*-*-*-*";
+static const char font[]        = "SF Pro Text:size=8";
+//static const char font[]        = "-*-*-medium-*-*-*-14-*-*-*-*-*-*-*";
 static const char* normbgcolor  = "#222222";
 static const char* normfgcolor  = "#cccccc";
 static const char* selbgcolor   = "#555555";
