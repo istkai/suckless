@@ -23,10 +23,10 @@ static const char col_gray4[]       =  "#eeeeee";
 static const char col_cyan[]        =  "#8BE9FD";
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
-	[SchemeNorm] = { col_fg, col_bg, col_magenta },
+	[SchemeNorm] = { col_fg, col_bg,      col_magenta },
 	[SchemeSel]  = { col_bg, col_purple,  col_purple  },
 };
-static const unsigned int baralpha = 0xd0;
+static const unsigned int baralpha = 0xBF;
 static const unsigned int borderalpha = OPAQUE;
 static const unsigned int alphas[][3]      = {
 	/*               fg      bg        border     */
@@ -93,7 +93,7 @@ static Key keys[] = {
 	{ MODKEY,                       XK_i,      spawn,          {.v = monitor } },
 	{ MODKEY,                       XK_s,      spawn,          SHCMD("exec $HOME/.scrot.sh") },
 	{ MODKEY,                       XK_r,      spawn,          {.v = file } },
-	{ MODKEY,                       XK_w,      spawn,          {.v = qubrowser } },
+	{ MODKEY,                       XK_w,      spawn,          {.v = subrowser } },
 	{ MODKEY|ShiftMask,             XK_j,      rotatestack,    {.i = +1 } },
 	{ MODKEY|ShiftMask,             XK_k,      rotatestack,    {.i = -1 } },
 	{ MODKEY,                       XK_d,      spawn,          {.v = dmenucmd } },
