@@ -26,7 +26,7 @@ static const char *colors[][3]      = {
 	[SchemeNorm] = { col_fg, col_bg,      col_magenta },
 	[SchemeSel]  = { col_bg, col_purple,  col_purple  },
 };
-static const unsigned int baralpha = 0xBF;
+static const unsigned int baralpha = 0xbfU;
 static const unsigned int borderalpha = OPAQUE;
 static const unsigned int alphas[][3]      = {
 	/*               fg      bg        border     */
