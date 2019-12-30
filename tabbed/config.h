@@ -1,11 +1,11 @@
 /* See LICENSE file for copyright and license details. */
 
 /* appearance */
-static const char font[]        = "SF Pro Text:size=8";
+static const char font[]        = "SF Mono:size=8";
 //static const char font[]        = "-*-*-medium-*-*-*-14-*-*-*-*-*-*-*";
-static const char* normbgcolor  = "#222222";
+static const char* normbgcolor  = "#333333";
 static const char* normfgcolor  = "#cccccc";
-static const char* selbgcolor   = "#555555";
+static const char* selbgcolor   = "#1C1C1C";
 static const char* selfgcolor   = "#ffffff";
 static const char before[]      = "<";
 static const char after[]       = ">";
