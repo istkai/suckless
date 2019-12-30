@@ -86,10 +86,12 @@ static const char *file[]       = { "st", "ranger", NULL };
 static const char *monitor[]    = { "st", "htop", NULL };
 static const char *music[]      = { "spotify", NULL };
 static const char *yout[]       = { "gtk-youtube-viewer", NULL };
+static const char *style[]      = { "lxappearance", NULL };
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
 	{ MODKEY,                       XK_y,      spawn,          {.v = yout } },
+	{ MODKEY,                       XK_l,      spawn,          {.v = style } },
 	{ MODKEY,                       XK_i,      spawn,          {.v = monitor } },
 	{ MODKEY,                       XK_s,      spawn,          SHCMD("exec $HOME/.scrot.sh") },
 	{ MODKEY,                       XK_r,      spawn,          {.v = file } },
@@ -103,8 +105,8 @@ static Key keys[] = {
 	{ MODKEY,                       XK_k,      focusstack,     {.i = -1 } },
 	{ MODKEY|ShiftMask,             XK_i,      incnmaster,     {.i = +1 } },
 	{ MODKEY|ShiftMask,             XK_d,      incnmaster,     {.i = -1 } },
-	{ MODKEY,                       XK_h,      setmfact,       {.f = -0.05} },
-	{ MODKEY,                       XK_l,      setmfact,       {.f = +0.05} },
+	{ MODKEY|ShiftMask,             XK_h,      setmfact,       {.f = -0.05} },
+	{ MODKEY|ShiftMask,             XK_l,      setmfact,       {.f = +0.05} },
 	{ MODKEY|ShiftMask,             XK_Return, zoom,           {0} },
 	{ MODKEY,                       XK_Tab,    view,           {0} },
 	{ MODKEY,                       XK_q,      killclient,     {0} },
