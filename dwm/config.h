@@ -3,7 +3,7 @@
 /* appearance */
 static const unsigned int borderpx  =  1;        /* border pixel of windows */
 static const unsigned int snap      =  8;        /* snap pixel */
-static const unsigned int gappx     =  10;
+static const unsigned int gappx     =  20;
 static const int showbar            =  1;        /* 0 means no bar */
 static const int topbar             =  1;        /* 0 means bottom bar */
 static const char *fonts[]          = {"SF Pro Text:size=8" };
@@ -80,6 +80,7 @@ static const Layout layouts[] = {
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[]   = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_bg, "-nf", col_fg, "-sb", col_cyan, "-sf", col_bg, NULL };
 static const char *termcmd[]    = { "st", NULL };
+static const char *fibrowser[]  = { "firefox", NULL };
 static const char *subrowser[]  = { "tabbed", "surf", "-pe", NULL };
 static const char *qubrowser[]  = { "qutebrowser", NULL};
 static const char *file[]       = { "st", "ranger", NULL };
@@ -97,7 +98,7 @@ static Key keys[] = {
 	{ MODKEY,                       XK_i,      spawn,          {.v = monitor } },
 	{ MODKEY,                       XK_s,      spawn,          SHCMD("exec $HOME/.scrot.sh") },
 	{ MODKEY,                       XK_r,      spawn,          {.v = file } },
-	{ MODKEY,                       XK_w,      spawn,          {.v = subrowser } },
+	{ MODKEY,                       XK_w,      spawn,          {.v = fibrowser } },
 	{ MODKEY|ShiftMask,             XK_j,      rotatestack,    {.i = +1 } },
 	{ MODKEY|ShiftMask,             XK_k,      rotatestack,    {.i = -1 } },
 	{ MODKEY,                       XK_d,      spawn,          {.v = dmenucmd } },
