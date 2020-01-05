@@ -27,7 +27,7 @@ static const char col_cyan[]        =  "#8BE9FD";
 static const char *colors[][3]      = {
 	/*               fg        bg            border   */
 	[SchemeNorm] = { col_fg_w, col_bg_c,     col_bg_c },
-	[SchemeSel]  = { col_bg_c, col_fg_y,     col_fg_y  },
+	[SchemeSel]  = { col_bg_c, col_fg_y,     col_bg_c  },
 };
 static const unsigned int baralpha = 0xcc;
 static const unsigned int borderalpha = OPAQUE;
