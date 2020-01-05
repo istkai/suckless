@@ -90,22 +90,30 @@ static const char *colorname[] = {
 
   /* 8 normal colors */
   [0] = "#000000", /* black   */
-  [1] = "#ff5555", /* red     */
+//[1] = "#ff5555", /* red     */
+  [1] = "#E8171A",
   [2] = "#50fa7b", /* green   */
-  [3] = "#f1fa8c", /* yellow  */
-  [4] = "#bd93f9", /* blue    */
+//[3] = "#f1fa8c", /* yellow  */
+  [3] = "#EA7217",
+//[4] = "#bd93f9", /* blue    */
+  [4] = "#F9CE74",
   [5] = "#ff79c6", /* magenta */
-  [6] = "#8be9fd", /* cyan    */
+//[6] = "#8be9fd", /* cyan    */
+  [6] = "#F9CE74",
   [7] = "#bbbbbb", /* white   */
 
   /* 8 bright colors */
   [8]  = "#44475a", /* black   */
-  [9]  = "#ff5555", /* red     */
+//[9]  = "#ff5555", /* red     */
+  [9]  = "#E8171A",
   [10] = "#50fa7b", /* green   */
-  [11] = "#f1fa8c", /* yellow  */
-  [12] = "#bd93f9", /* blue    */
+//[11] = "#f1fa8c", /* yellow  */
+  [11] = "#EA7217",
+//[12] = "#bd93f9", /* blue    */
+  [12] = "#F9CE74",
   [13] = "#ff79c6", /* magenta */
-  [14] = "#8be9fd", /* cyan    */
+//[14] = "#8be9fd", /* cyan    */
+  [14] = "#F9CE74",
   [15] = "#ffffff", /* white   */
 
   /* special colors */
@@ -113,6 +121,9 @@ static const char *colorname[] = {
 //[257] = "#f8f8f2", /* foreground */
   [256] = "#1C1C1C", /* background */
   [257] = "#FFFFFF", /* foreground */
+  [258] = "#F9CE74", /* col_fg_y   */
+  [259] = "#EA7217", /* col_fg_o   */
+  [260] = "#E8171A",
 
 };
 
@@ -161,20 +172,20 @@ static unsigned int defaultattr = 11;
 ResourcePref resources[] = {
 		{ "font",         STRING,  &font },
 		{ "color0",       STRING,  &colorname[0] },
-		{ "color1",       STRING,  &colorname[1] },
+		{ "color1",       STRING,  &colorname[260] },
 		{ "color2",       STRING,  &colorname[2] },
-		{ "color3",       STRING,  &colorname[3] },
-		{ "color4",       STRING,  &colorname[4] },
+		{ "color3",       STRING,  &colorname[259] },
+		{ "color4",       STRING,  &colorname[258] },
 		{ "color5",       STRING,  &colorname[5] },
-		{ "color6",       STRING,  &colorname[6] },
+		{ "color6",       STRING,  &colorname[258] },
 		{ "color7",       STRING,  &colorname[7] },
 		{ "color8",       STRING,  &colorname[8] },
-		{ "color9",       STRING,  &colorname[9] },
+		{ "color9",       STRING,  &colorname[260] },
 		{ "color10",      STRING,  &colorname[10] },
-		{ "color11",      STRING,  &colorname[11] },
-		{ "color12",      STRING,  &colorname[12] },
+		{ "color11",      STRING,  &colorname[259] },
+		{ "color12",      STRING,  &colorname[258] },
 		{ "color13",      STRING,  &colorname[13] },
-		{ "color14",      STRING,  &colorname[14] },
+		{ "color14",      STRING,  &colorname[258] },
 		{ "color15",      STRING,  &colorname[15] },
 		{ "background",   STRING,  &colorname[256] },
 		{ "foreground",   STRING,  &colorname[257] },

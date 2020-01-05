@@ -28,7 +28,7 @@ static const char col_cyan[]        =  "#8BE9FD";
 
 static const char *colors[SchemeLast][2] = {
 	/*               fg         bg        */
-	[SchemeNorm] = { col_fg_y,  col_bg_c  },
+	[SchemeNorm] = { col_white, col_bg_c  },
 	[SchemeSel] =  { col_bg_c,  col_fg_y  },
 	[SchemeOut] =  { col_black, col_out_b },
 };
