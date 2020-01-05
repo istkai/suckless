@@ -17,14 +17,17 @@ static const char col_purple[]      =  "#BD93F9";
 static const char col_green[]       =  "#50FA7B";
 static const char col_yellow[]	    =  "#F1FA8C";
 static const char col_magenta[]     =  "#FF79C6";
-static const char col_bg[]          =  "#282A36";
-static const char col_fg[]          =  "#F8F8F2";
+static const char col_bg_d[]        =  "#282A36";
+static const char col_bg_c[]        =  "#312D2A";
+static const char col_fg_w[]        =  "#F8F8F2";
+static const char col_fg_y[]        =  "#F9CE74";
+static const char col_fg_o[]        =  "#EA7217";
 static const char col_gray4[]       =  "#eeeeee";
 static const char col_cyan[]        =  "#8BE9FD";
 static const char *colors[][3]      = {
-	/*               fg         bg         border   */
-	[SchemeNorm] = { col_fg, col_bg,      col_magenta },
-	[SchemeSel]  = { col_bg, col_purple,  col_purple  },
+	/*               fg        bg            border   */
+	[SchemeNorm] = { col_fg_w, col_bg_c,     col_bg_c },
+	[SchemeSel]  = { col_bg_c, col_fg_y,     col_fg_y  },
 };
 static const unsigned int baralpha = 0xa9;
 static const unsigned int borderalpha = OPAQUE;
@@ -78,7 +81,7 @@ static const Layout layouts[] = {
 
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
-static const char *dmenucmd[]   = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_bg, "-nf", col_fg, "-sb", col_cyan, "-sf", col_bg, NULL };
+static const char *dmenucmd[]   = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_bg_c, "-nf", col_fg_y, "-sb", col_fg_y, "-sf", col_bg_c, NULL };
 static const char *termcmd[]    = { "st", NULL };
 static const char *fibrowser[]  = { "firefox", NULL };
 static const char *subrowser[]  = { "tabbed", "surf", "-pe", NULL };
