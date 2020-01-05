@@ -1,11 +1,11 @@
 /* See LICENSE file for copyright and license details. */
 
 /* appearance */
-static const unsigned int borderpx  =  0;        /* border pixel of windows */
+static const unsigned int borderpx  =  1;        /* border pixel of windows */
 static const unsigned int snap      =  1;        /* snap pixel */
-static const unsigned int gappx     =  10;
+static const unsigned int gappx     =  2;
 static const int showbar            =  1;        /* 0 means no bar */
-static const int topbar             =  0;        /* 0 means bottom bar */
+static const int topbar             =  1;        /* 0 means bottom bar */
 static const char *fonts[]          = {"SF Pro Text:size=8" };
 static const char dmenufont[]       =  "SF Pro Text:size=8";
 static const char col_gray1[]       =  "#222222";
@@ -52,6 +52,7 @@ static const Rule rules[] = {
         { "Surf",         "surf",     NULL,       		1,            1,              0,           -1 },
 	{ "Spotify",      "spotify",  NULL,                     1 << 7,	      1,              0,           -1 },
 	{ "St",           "st",       "ranger",                 1 << 3,	      1,              0,           -1 },
+	{ "St",           "st",       NULL,                     0,	      1,              0,           -1 },
 	{ "St",           "st",       "htop",                   0,	      1,              1,           -1 },
 
 };
