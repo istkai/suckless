@@ -29,12 +29,12 @@ static const char *colors[][3]      = {
 	[SchemeNorm] = { col_fg_w, col_bg_c,     col_bg_c },
 	[SchemeSel]  = { col_bg_c, col_fg_y,     col_fg_y  },
 };
-static const unsigned int baralpha = 0xa9;
+static const unsigned int baralpha = 0xcc;
 static const unsigned int borderalpha = OPAQUE;
 static const unsigned int alphas[][3]      = {
 	/*               fg      bg        border     */
-	[SchemeNorm] = { OPAQUE, baralpha, borderalpha },
-	[SchemeSel]  = { OPAQUE, baralpha, borderalpha },
+	[SchemeNorm] = { OPAQUE, baralpha, baralpha },
+	[SchemeSel]  = { OPAQUE, baralpha, baralpha },
 };
 
 /* tagging */
