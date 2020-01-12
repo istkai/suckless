@@ -86,6 +86,7 @@ static const char *dmenucmd[]   = { "dmenu_run", "-m", dmenumon, "-fn", dmenufon
 static const char *termcmd[]    = { "st", NULL };
 static const char *fibrowser[]  = { "firefox", NULL };
 static const char *subrowser[]  = { "tabbed", "surf", "-pe", NULL };
+static const char *chbrowser[]  = { "google-chrome-stable", NULL };
 static const char *qubrowser[]  = { "qutebrowser", NULL};
 static const char *file[]       = { "st", "ranger", NULL };
 static const char *monitor[]    = { "st", "htop", NULL };
@@ -102,7 +103,7 @@ static Key keys[] = {
 	{ MODKEY,                       XK_i,      spawn,          {.v = monitor } },
 	{ MODKEY,                       XK_s,      spawn,          SHCMD("exec $HOME/.scrot.sh") },
 	{ MODKEY,                       XK_r,      spawn,          {.v = file } },
-	{ MODKEY,                       XK_w,      spawn,          {.v = fibrowser } },
+	{ MODKEY,                       XK_w,      spawn,          {.v = chbrowser } },
 	{ MODKEY|ShiftMask,             XK_w,      spawn,          {.v = subrowser } },
 	{ MODKEY|ControlMask,           XK_w,      spawn,          {.v = qubrowser } },
 	{ MODKEY|ShiftMask,             XK_j,      rotatestack,    {.i = +1 } },
